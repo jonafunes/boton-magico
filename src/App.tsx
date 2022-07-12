@@ -1,25 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
+import cone from './assets/images/cone.png';
+import icosahedron from './assets/images/icosahedron.png';
+import sphere from './assets/images/sphere.png';
+import torus from './assets/images/torus.png';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <body>
+      <a href="/" className="button">
+        <span className="button__text">
+          play
+        </span>
+        <img src={cone} className="button__cone" alt="cone" />
+        <img src={torus} className="button__torus" alt="torus" />
+        <img src={icosahedron} className="button__icosahedron" alt="icosahedron" />
+        <img src={sphere} className="button__sphere" alt="sphere" />
+      </a>
+    </body>
   );
 }
 
